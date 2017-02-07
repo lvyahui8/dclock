@@ -61,19 +61,20 @@
                         android:text="@string/add_alarm"/>
                 </org.lyh.dclock.AlarmView>
 
-                <LinearLayout
+                <org.lyh.dclock.TimerView
                     android:id="@+id/tabTimer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </LinearLayout>
 
-                <LinearLayout
+                </org.lyh.dclock.TimerView>
+
+                <org.lyh.dclock.StopWatchView
                     android:id="@+id/tabStopWatch"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </LinearLayout>
+                </org.lyh.dclock.StopWatchView>
             </FrameLayout>
         </LinearLayout>
     </TabHost>
