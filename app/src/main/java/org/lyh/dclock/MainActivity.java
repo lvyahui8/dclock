@@ -20,5 +20,10 @@ public class MainActivity extends AppCompatActivity {
         tabHost.addTab(tabHost.newTabSpec("tabStopWatch").setIndicator("秒表").setContent(R.id.tabStopWatch));
     }
 
+    static {
+        System.loadLibrary("hello_jni");
+    }
 
+    public static native String helloJni();
+    public static native int addCalc(int a, int b);
 }
